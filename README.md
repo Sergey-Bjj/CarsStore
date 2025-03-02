@@ -66,8 +66,8 @@
 
 ### Шаги для запуска
 1. Клонировать репозиторий
-2. Создай файл appsettings.json в корне проекта
-3. Запустить БД в Docker (docker-compose.yml) > поднять контейнер docker-compose up -d
+2. Создай файл appsettings.json/appsettings.Development.json в корне проекта
+3. Запустить БД в Docker (Dockerfile) > поднять контейнер docker-compose up -d
 4. Выполнить мигрaцию и обновить БД: dotnet ef migrations add InitialCreate --project CarStore dotnet ef database update --project CarStore
 5. Запустить: dotnet run --project CarStore
 
